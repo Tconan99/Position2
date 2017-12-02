@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.login.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/login_imei_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMEI"/>
+
+    <TextView
+        android:id="@+id/login_imei_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/login_imei_string"
+        android:layout_toEndOf="@+id/login_imei_string"
+        android:layout_alignBaseline="@+id/login_imei_string"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/login_name_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/login_name_tv"
+        android:text="帐号"/>
+
+    <EditText
+        android:id="@+id/login_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/login_name_string"
+        android:layout_toEndOf="@+id/login_name_string"
+        android:layout_below="@+id/login_imei_string"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/login_phone_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/login_phone_tv"
+        android:text="密码"/>
+
+    <EditText
+        android:id="@+id/login_phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/login_phone_string"
+        android:layout_toEndOf="@+id/login_phone_string"
+        android:layout_below="@+id/login_name_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:password="true" />
+
+    <Button
+        android:id="@+id/login_ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_phone_tv"
+        android:text="登录" />
+
+</RelativeLayout>
